@@ -1,0 +1,17 @@
+<% @blogs.each do  |blog| %>
+ <% if  blog.id == 1 || blog.id == 4 || blog.id == 7  %>
+<h3><%= blog.category %></h3><span></span>
+<div class="card-deck">
+  <% end %>
+  <div class="card" style="width: 18rem">
+    <%= image_tag(blog.image, style:'width:100%') %>
+    <div class="card-body">
+      <h5 class="card-title"><%= blog.title %></h5>
+      <p class="card-text"><%= blog.content %></p>
+      <a href="#" class="btn btn-primary">Read More</a>
+    </div>
+  </div>
+<% if blog.id == 3 || blog.id == 6 || blog.id == 9 %>
+</div>
+<% end %>
+<% end %>

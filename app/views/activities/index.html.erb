@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Activities</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+    <th scope="col">#</th>
+		<th scope="col">Activity</th>
+		<th scope="col">Date</th>
+		<th scope="col">Duraction</th>
+     <th scope="col">Show</th>
+     <th scope="col">Edit</th>
+     <th scope="col">Delete</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @activities.each do |activity| %>
+      <tr>
+        <td><%= activity.id %></td>
+        <td><%= activity.name %></td>
+        <td><%= activity.date.to_formatted_s(:long) %></td>
+        <td><%= activity.duration.strftime "%H:%M:%S"  %></td>
+        <td><%= link_to 'Show', activity, class: "btn btn-success" %></td>
+        <td><%= link_to 'Edit', edit_activity_path(activity), class: "btn btn-info"  %></td>
+        <td><%= link_to 'Destroy', activity, class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Activity', new_activity_path, class: "btn btn-primary" %>

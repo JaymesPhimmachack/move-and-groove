@@ -1,0 +1,17 @@
+<% @recipes.each do  |recipe| %>
+ <% if  recipe.id == 1 || recipe.id == 4 || recipe.id == 7  %>
+<h3><%= recipe.category %></h3><span></span>
+<div class="card-deck">
+  <% end %>
+  <div class="card" style="width: 18rem">
+    <%= image_tag(recipe.image, style:'width:100%') %>
+    <div class="card-body">
+      <h5 class="card-title"><%= recipe.title %></h5>
+      <p class="card-text"><%= recipe.content %></p>
+      <a href="#" class="btn btn-primary">Read More</a>
+    </div>
+  </div>
+<% if recipe.id == 3 || recipe.id == 6 || recipe.id == 9 %>
+</div>
+<% end %>
+<% end %>
