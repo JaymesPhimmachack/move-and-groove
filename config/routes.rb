@@ -4,5 +4,4 @@ Rails.application.routes.draw do
   get '/home/recipes' => 'home#recipes'
   devise_for :users
   resources :activities, :blogs, :recipes
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -37,6 +37,8 @@ ActiveRecord::Schema.define(version: 2020_10_04_173801) do
     t.string "name"
     t.date "date"
     t.time "duration"
+    t.integer "calories"
+    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"

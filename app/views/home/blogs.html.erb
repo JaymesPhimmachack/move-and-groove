@@ -1,6 +1,7 @@
 <% @blogs.each do  |blog| %>
  <% if  blog.id == 1 || blog.id == 4 || blog.id == 7  %>
-<h3><%= blog.category %></h3><span></span>
+<h3 class="font-weight-bold"><%= blog.category %></h3>
+<hr class="border-dark mb-4">
 <div class="card-deck">
   <% end %>
   <div class="card" style="width: 18rem">

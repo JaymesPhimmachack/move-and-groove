@@ -74,7 +74,7 @@ class ActivitiesController < ApplicationController
  
     # Only allow a list of trusted parameters through.
     def activity_params
-      params.fetch(:activity, {}).permit(:name, :date, :activity)
+      params.fetch(:activity, {}).permit(:name, :date, :calories, :description, :activity => [:hours, :minutes, :seconds])
     end
 
     def require_login

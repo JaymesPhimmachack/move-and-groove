@@ -1,2 +1,69 @@
 @import "bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+/**/
+.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.note {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+/* HOME */
+.navbar {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  background-image: url(dumbbells-2465478_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.main-heading,
+.sub-heading,
+.hero-text {
+  text-shadow: 0 2px 2px gray;
+}
+
+.fab {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cta {
+  position: relative;
+  top: 100px;
+  left: 0;
+}
+
+.card-deck {
+  margin-bottom: 2rem;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto 70px;
+}

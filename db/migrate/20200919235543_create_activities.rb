@@ -4,6 +4,8 @@ class CreateActivities < ActiveRecord::Migration[5.2]
       t.string :name
       t.date :date
       t.time :duration
+      t.integer :calories
+      t.text :description
 
       t.timestamps
     end
