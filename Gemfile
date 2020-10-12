@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'font-awesome-sass', '~> 5.13.0'
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.2'
+gem 'bootstrap', '~> 4.5', '>= 4.5.2'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
