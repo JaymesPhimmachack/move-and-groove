@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "../node_modules/rfs/scss";
 
 /**/
 .error {
@@ -31,7 +32,7 @@
 
 /* HOME */
 .navbar {
-  width: 1120px;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
@@ -40,6 +41,26 @@
   background-size: cover;
   background-position: center;
   height: 500px;
+}
+
+.hero-wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
+}
+
+.main-heading {
+  @include rfs(54px);
+}
+
+.sub-heading {
+  @include rfs(32px);
+}
+
+.hero-text {
+  @include rfs(18px);
 }
 
 .main-heading,
@@ -54,9 +75,7 @@
 }
 
 .cta {
-  position: relative;
-  top: 100px;
-  left: 0;
+  margin-top: 10%;
 }
 
 .card-deck {

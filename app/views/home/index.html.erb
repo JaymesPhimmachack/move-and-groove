@@ -1,36 +1,38 @@
 
 <div class="jumbotron">
-  <h1 class="display-4 text-dark font-weight-bold main-heading">Welcome to Move 'n Groove!</h1>
-  <h2 class="text-dark font-weight-bold sub-heading">Where fitness is not a destination, it is a way of life.</h2>
-  <hr class="my-4 border-dark">
-  <div class="cta">
-    <p class="text-dark font-weight-bold mb-4 hero-text">Ready to get in shape?</p>
-  <%= link_to 'Sign Up',  new_user_session_path, class: "btn btn-primary btn-lg"  %>
-  </div>
+  <div class="w-80 hero-wrapper">
+    <h1 class="text-info font-weight-bold main-heading">Welcome to Move 'n Groove!</h1>
+    <h2 class="text-info font-weight-bold sub-heading">Where fitness is not a destination, it is a way of life.</h2>
+    <hr class="my-4 border-info">
+    <div class="cta">
+      <p class="text-info font-weight-bold mb-4 hero-text">Ready to get in shape?</p>
+      <%= link_to 'Sign Up',  new_user_session_path, class: "btn btn-primary btn-lg"  %>
+    </div>
+  </div> 
 </div>
 
 <div class="card-deck">
-  <div class="card" style="width: 18rem;">
+  <div class="card">
     <%= image_tag(@recipes[5].image, style:'width:100%') %>
     <div class="card-body">
       <h5 class="card-title"><%= @recipes[5].title %></h5>
-      <p class="card-text mb-5"><%= @recipes[5].content %></p>
+      <p class="card-text"><%= @recipes[5].content %></p>
       <a href="#" class="btn btn-primary">Read More</a>
     </div>
   </div>
-  <div class="card" style="width: 18rem;">
+  <div class="card">
     <%= image_tag(@blogs[4].image, style:'width:100%') %>
     <div class="card-body">
       <h5 class="card-title"><%= @blogs[4].title %></h5>
-      <p class="card-text mb-4"><%= @blogs[4].content.truncate(67) %></p>
+      <p class="card-text"><%= @blogs[4].content.truncate(67) %></p>
       <a href="#" class="btn btn-primary">Read More</a>
     </div>
   </div>
-  <div class="card" style="width: 18rem;">
+  <div class="card">
     <%= image_tag(@blogs[2].image, style:'width:100%') %>
     <div class="card-body">
       <h5 class="card-title"><%= @blogs[2].title %></h5>
-      <p class="card-text mb-4"><%= @blogs[2].content.truncate(67) %></p>
+      <p class="card-text"><%= @blogs[2].content.truncate(67) %></p>
       <a href="#" class="btn btn-primary">Read More</a>
     </div>
   </div>
