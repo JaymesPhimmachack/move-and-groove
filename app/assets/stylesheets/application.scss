@@ -86,3 +86,50 @@
   max-width: 500px;
   margin: 0 auto 70px;
 }
+
+@media (min-width: 350px) {
+  .home-blog-1 {
+    .card-title {
+      height: 50px;
+    }
+    .card-text {
+      height: 75px;
+    }
+  }
+
+  .home-blog-2 {
+    .card-title {
+      height: 50px;
+    }
+    .card-text {
+      height: 75px;
+    }
+  }
+
+  .home-blog-3 {
+    .card-title {
+      height: 50px;
+    }
+    .card-text {
+      height: 75px;
+    }
+  }
+
+  .recipe {
+    .card-title {
+      height: 50px;
+    }
+    .card-text {
+      height: 75px;
+    }
+  }
+
+  .blog {
+    .card-title {
+      height: 75px;
+    }
+    .card-text {
+      height: 170px;
+    }
+  }
+}

@@ -5,7 +5,7 @@ class ActivitiesController < ApplicationController
   # GET /activities
   # GET /activities.json
   def index
-    @activities = Activity.all
+    @activities = current_user.activities
   end
 
   # GET /activities/1
@@ -25,8 +25,7 @@ class ActivitiesController < ApplicationController
   # POST /activities
   # POST /activities.json
   def create
-    @activity = Activity.new(activity_params)
-    @activity.user = current_user
+    @activity = current_user.activities.new(activity_params)
     @activity.name = params[:name]
     @activity.date = Date.civil(params[:date][:year].to_i, params[:date][:month].to_i, params[:date][:day].to_i)
     @activity.duration = params[:activity][:hour] + ':' + params[:activity][:minute] + ':' + params[:activity][:second]
@@ -59,6 +58,7 @@ class ActivitiesController < ApplicationController
   # DELETE /activities/1
   # DELETE /activities/1.json
   def destroy
+    @activity = current_user.activities.find(params[:id])
     @activity.destroy
     respond_to do |format|
       format.html { redirect_to activities_url, notice: 'Activity was successfully destroyed.' }

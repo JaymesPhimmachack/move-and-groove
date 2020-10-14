@@ -14,7 +14,7 @@
 <div class="card-deck">
   <div class="card">
     <%= image_tag(@recipes[5].image, style:'width:100%') %>
-    <div class="card-body">
+    <div class="card-body home-blog-1">
       <h5 class="card-title"><%= @recipes[5].title %></h5>
       <p class="card-text"><%= @recipes[5].content %></p>
       <a href="#" class="btn btn-primary">Read More</a>
@@ -22,7 +22,7 @@
   </div>
   <div class="card">
     <%= image_tag(@blogs[4].image, style:'width:100%') %>
-    <div class="card-body">
+    <div class="card-body home-blog-2">
       <h5 class="card-title"><%= @blogs[4].title %></h5>
       <p class="card-text"><%= @blogs[4].content.truncate(67) %></p>
       <a href="#" class="btn btn-primary">Read More</a>
@@ -30,7 +30,7 @@
   </div>
   <div class="card">
     <%= image_tag(@blogs[2].image, style:'width:100%') %>
-    <div class="card-body">
+    <div class="card-body home-blog-3">
       <h5 class="card-title"><%= @blogs[2].title %></h5>
       <p class="card-text"><%= @blogs[2].content.truncate(67) %></p>
       <a href="#" class="btn btn-primary">Read More</a>
