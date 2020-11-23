@@ -4,8 +4,7 @@
   "dependencies": {
     "@rails/webpacker": "5.2.1",
     "jquery": "^3.5.1",
-    "popper.js": "^1.16.1",
-    "rfs": "^9.0.3"
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.11.0"

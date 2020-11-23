@@ -1,7 +1,7 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import "~rfs/scss";
+
 
 /**/
 .error {
@@ -52,15 +52,41 @@
 }
 
 .main-heading {
-  @include rfs(54px);
+  font-size: calc(1.525rem + 3.3vw);
+}
+ 
+@media (min-width: 1200px) {
+  .main-heading {
+    font-size: 4rem;
+  }
 }
 
 .sub-heading {
-  @include rfs(32px);
+  font-size: 2rem;
+}
+
+.sub-heading {
+  font-size: calc(0.7625rem + 3.3vw);
+}
+ 
+@media (min-width: 1200px) {
+  .sub-heading {
+    font-size: 2rem;
+  }
 }
 
 .hero-text {
-  @include rfs(18px);
+  font-size: 1.125rem;
+}
+
+.hero-text {
+  font-size: calc(0.6328rem + 3.3vw);
+}
+ 
+@media (min-width: 1200px) {
+  .hero-text {
+    font-size: 1.125rem;
+  }
 }
 
 .main-heading,
