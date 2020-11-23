@@ -5,7 +5,7 @@
 <div class="card-deck">
   <% end %>
   <div class="card">
-    <%= image_tag(recipe.image, style:'width:100%') %>
+    <%= image_tag("https://res.cloudinary.com/dcuvoemqb/image/upload/v1606092226/move_and_groove/recipes-images/recipe-image-00#{recipe.id}.jpg", style:'width:100%') %>
     <div class="card-body recipe">
       <h5 class="card-title"><%= recipe.title %></h5>
       <p class="card-text"><%= recipe.content %></p>

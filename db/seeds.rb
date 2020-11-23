@@ -19,13 +19,6 @@ recipes = Recipe.create([
 	{ title: "30-Minute Thai Coconut Chicken Curry", content: "Mildly spicy and full of vegetables, this easy green chicken curry is the...", category: "Dinner" },
 ])
 
-recipes.each do |recipe| 
-	recipe.image.attach(
-		io: File.open("./public/images/recipes-images/recipe-image-00#{recipe.id}.jpg"),
-		filename: "recipe-image-00#{recipe.id}.jpg",
-		content_type: 'application/jpg'
-	) 
-end	
 
 blogs = Blog.create([
 	{ title: "5 Reasons You Tire Quickly on Walks", content: "Increasing your step count with a daily walk is one of the easiest ways to start an exercise habit and improve your overall health. As with any fitness routine, it takes time to progress before...", category: "Walking"},
@@ -39,10 +32,3 @@ blogs = Blog.create([
 	{ title: "10 Cycling Organizations That Support Diversity", content: "Whether it’s improving health, lowering the risk of disease, reducing stress, or providing a cost-effective means of transportation in urban environments, there are many benefits to a cycling...", category: "Cycling"},
 ])
 
-blogs.each do |blog| 
-	blog.image.attach(
-		io: File.open("./public/images/blog-images/blog-image-00#{blog.id}.jpg"),
-		filename: "blog-image-00#{blog.id}.jpg",
-		content_type: 'application/jpg'
-	) 
-end	
